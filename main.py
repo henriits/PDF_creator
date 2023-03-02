@@ -12,7 +12,7 @@ for index, row in df.iterrows():
     # Set the header
     pdf.set_font(family="Times", style="B", size=24)
     pdf.set_text_color(100, 100, 100)
-    pdf.cell(w=0, h=12, txt=row["Topic"], align="L", ln=1)
+    pdf.cell(w=0, h=12, txt=row["Topic"], align="L", ln=1)  # ln allows to add cell under this
 
     # Creating lines on whole page
     for y in range(20, 298, 10):
